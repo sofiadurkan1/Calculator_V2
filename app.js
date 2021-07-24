@@ -55,7 +55,8 @@ function DisplayNumbers() {
 function AppendNumber(number) {
   if (number === "." && currentOperand.includes(".")) return;
   if (number === 0 && currentOperand === "0") return;
-  if (currentOperand.length > 7) return;
+  if(currentOperand.length>7)return;
+
 
   currentOperand = currentOperand.toString() + number.toString();
 
